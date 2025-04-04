@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload and Display Text</title>
+</head>
+<body>
+    <h2>Upload an Image</h2>
+    <form method="get">
+        <h1 id="data">Text</h1>
+        <input type="text" name="text" id="text">
+        <input type="submit" onclick="submit()">
+    </form>
+
+
+    <script>
+    function submit(){
+    	document.getElementById('data').textContent = document.getElementById('text').value;
+    }
+    </script>
+    <?php
+        $text = $_get["text"];
+        echo "";
+    ?>
+</body>
+</html>
